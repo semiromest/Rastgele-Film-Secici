@@ -19,7 +19,7 @@ for Film in List:
     Name = Film.find("td",{"class": "titleColumn"}).a.text
     Tarih = Film.find("td",{"class":"titleColumn"}).span.text
     imdb = Film.find("td",{"class":"ratingColumn imdbRating"}).text.strip()
-   # filmbilgileri[Name] = (Tarih, imdb)
+  
     list_name.append(Name)
     list_tarih.append(Tarih)
     list_imdb.append(imdb)
